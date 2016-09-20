@@ -1,0 +1,26 @@
+<html ng-app="login">
+
+<head>
+    <link href="'../../../../public/lib/bootstrap/dist/css/bootstrap.css'">
+</head>
+
+<body>
+       <table class = "table login-server" align="center">
+        <tr>
+        <td align="center"><a ui-sref="app.signup"><h3><span class="label label-default">Sign Up</span></h3></a></td>
+        <td align="center"> <a ui-sref="app.login"><h3><span class="label label-default">Login</span></h3></a></td>
+        </tr>
+
+    <!--<div ng-include="'modules/core/client/views/login/base.client.tpl.html'">-->
+    <td colspan="2"><div ui-view></div></td>
+       </table>
+
+<script src="public/lib/angular/angular.min.js"></script>
+<script src="public/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="public/lib/angular-route/angular-route.min.js"></script>
+<script src="modules/core/client/controllers/core.client.controller.js"></script>
+<script src="modules/core/client/routes/core.client.route.js"></script>
+
+</body>
+
+</html>

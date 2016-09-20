@@ -1,0 +1,36 @@
+<div align="center" class="contacts-form-container" ng-controller="createCtrl">
+    <h3 align="center"><u>CREATE ACCOUNT</u></h3>
+
+    <form name="MyForm" class="bs-example bs-example-form" data-example-id="input-group-sizing">
+        <div class="border-class">
+            <br>
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon" id="sizing-addon1">First Name</span>
+                <input class="form-control" placeholder="First Name" aria-describedby="sizing-addon1" ng-model="cust.firstName">
+            </div>
+            <br>
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon" id="sizing-addon2">Last Name</span>
+                <input name="lastName" class="form-control" placeholder="Last Name" aria-describedby="sizing-addon1" ng-model="cust.lastName">
+            </div>
+            <br>
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon" id="sizing-addon3">Branch Name</span>
+                <input class="form-control" placeholder="Branch Name" aria-describedby="sizing-addon1" ng-model="cust.branchName">
+            </div>
+            <br>
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon" id="sizing-addon4">Cash</span>
+                <input name="email" type="email" class="form-control" placeholder="Cash" aria-describedby="sizing-addon1" ng-model="cust.cash">
+            </div>
+            <br>
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon" id="sizing-addon5">Account Type</span>
+                <input class="form-control" placeholder="Account Type" aria-describedby="sizing-addon5" ng-model="cust.accountType">
+            </div>
+            <br>
+            <button type="button" class="btn btn-default" ng-click="create(cust)">Submit</button>
+            <br><p></p>
+        </div>
+    </form>
+</div>

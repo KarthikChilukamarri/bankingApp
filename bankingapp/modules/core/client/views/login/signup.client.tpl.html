@@ -1,0 +1,61 @@
+
+<div ng-controller="signupCtrl">
+    <table border="1" align="center">
+    <form name="MyForm" class="bs-example bs-example-form" data-example-id="input-group-sizing">
+            <div class="border-class">
+            <div class="input-group input-group-lg">
+                <tr>
+                    <td><span class="input-group-addon" id="sizing-addon1">First Name</span></td>
+                    <td><input class="form-control" placeholder="First Name" aria-describedby="sizing-addon1" ng-model="user.firstName"></td>
+                </tr>
+            </div>
+
+            <div class="input-group input-group-lg">
+                <tr>
+                    <td><span class="input-group-addon" id="sizing-addon2">Last Name</span></td>
+                    <td><input name="lastName" class="form-control" placeholder="Last Name" aria-describedby="sizing-addon1" ng-model="user.lastName"></td>
+                </tr>
+            </div>
+
+            <div class="input-group input-group-lg">
+                <tr>
+                    <td><span class="input-group-addon" id="sizing-addon3">User Name</span></td>
+                    <td><input class="form-control" placeholder="User Name" aria-describedby="sizing-addon1" ng-model="user.userName"></td>
+                </tr>
+            </div>
+
+            <div class="input-group input-group-lg">
+                <tr>
+                    <td><span class="input-group-addon" id="sizing-addon4">Password</span></td>
+                    <td><input name="password" type="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon1" ng-model="user.password"></td>
+                </tr>
+            </div>
+
+            <div class="input-group input-group-lg">
+                <tr>
+                    <td><span class="input-group-addon" id="sizing-addon5">Account Type</span></td>
+                    <td><input class="form-control" placeholder="Account Type" aria-describedby="sizing-addon5" ng-model="user.accountType"></td>
+                </tr>
+            </div>
+
+            <div class="input-group input-group-lg">
+                <tr>
+                    <td><span class="input-group-addon" id="sizing-addon5">Cash Deposit</span></td>
+                    <td><input class="form-control" placeholder="Cash" aria-describedby="sizing-addon5" ng-model="user.cash"></td>
+                </tr>
+            </div>
+            <div class="input-group input-group-lg">
+                <tr>
+                    <td><span class="input-group-addon" id="sizing-addon5">Branch Name</span></td>
+                    <td><input class="form-control" placeholder="Branch Name" aria-describedby="sizing-addon5" ng-model="user.branchName"></td>
+                </tr>
+            </div>
+                <tr>
+                    <td colspan="2" align="center"><button type="button" class="btn btn-default" ng-click="submit(user)">Submit</button></td>
+                </tr>
+            <p></p>
+        </div>
+    </form>
+    </table>
+
+</div>

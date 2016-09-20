@@ -1,0 +1,35 @@
+<div align="center" class="contacts-form-container">
+    <h3 align="center"><u>MONEY TRANSFER</u></h3>
+    <form name="MyForm" class="bs-example bs-example-form" data-example-id="input-group-sizing">
+        <div class="border-class">
+            <br>
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon" id="sizing-addon1">Sender Account Type</span>
+                <input class="form-control" placeholder="Sender Account Type" aria-describedby="sizing-addon1" ng-model="cust.sAccType">
+            </div>
+            <br>
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon" id="sizing-addon2">Sender ID</span>
+                <input name="lastName" class="form-control" placeholder="Sender ID" aria-describedby="sizing-addon1" ng-model="cust.sendId">
+            </div>
+            <br>
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon" id="sizing-addon3">Receiver Account Type</span>
+                <input class="form-control" placeholder="Receiver Account Type" aria-describedby="sizing-addon1" ng-model="cust.rAccType">
+            </div>
+            <br>
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon" id="sizing-addon3">Receiver ID</span>
+                <input class="form-control" placeholder="Receiver ID" aria-describedby="sizing-addon1" ng-model="cust.recId">
+            </div>
+            <br>
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon" id="sizing-addon3">Ammount</span>
+                <input class="form-control" placeholder="Amount" aria-describedby="sizing-addon1" ng-model="cust.amount">
+            </div>
+            <br>
+            <button type="button" class="btn btn-default" ng-click="transfer(cust)">Submit</button>
+            <br><p></p>
+        </div>
+    </form>
+</div>

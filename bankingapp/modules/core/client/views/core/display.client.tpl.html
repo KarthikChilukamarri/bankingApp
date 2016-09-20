@@ -1,0 +1,71 @@
+<div>
+    <div>
+        <h3 align="center"><u>CUSTOMER INFO</u></h3>
+        <table class="table table-striped" align="center">
+            <thead>
+                <tr>
+                    <th>{{baseKey[0]}}</th>
+                    <th>{{baseKey[1]}}</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!--<td ng-repeat="info in baseInfo" ng-bind="info"></td>-->
+                    <!--</td>-->
+                    <!--4db81adc-afbe-50e8-8b1f-475459d71957-->
+                    <th>{{custInfo.firstName}}</th>
+                    <th>{{custInfo.lastName}}</th>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <p><h4 align><u>Account Info:</u></h4></p>
+        <table class="table table-striped" align="center">
+            <thead>
+            <tr>
+                <th ng-repeat="key in accKey" ng-bind="key">
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td ng-repeat="info in account" ng-bind="info"></td>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <br>
+        <p><h4 align><u>Address & Contact Info:</u></h4></p>
+        <table class="table table-striped" align="center">
+            <thead>
+            <tr>
+                <th ng-repeat="key in addKey" ng-bind="key">
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td ng-repeat="info in address" ng-bind="info"></td>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <p><h4 align><u>Branch Info:</u></h4></p>
+        <table class="table table-striped" align="center">
+            <thead>
+            <tr>
+                <th ng-repeat="key in braKey" ng-bind="key">
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>{{branch.branchCode}}</td>
+                <td>{{branch.branchLocation}}</td>
+                <td>{{branch.branchName}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
